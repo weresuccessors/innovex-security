@@ -22,9 +22,9 @@ const teamMembers = [
     initials: "DB",
   },
   {
-    name: "Bidisha",
+    name: "Vaishnavi Dubey",
     role: "Team Innovex",
-    initials: "BI",
+    initials: "VD",
   },
   {
     name: "Raj Kumar Goala",

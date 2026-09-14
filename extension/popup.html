@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Innovex Security</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header><strong>Innovex Security</strong><span>URL Scanner</span></header>
+    <div id="url">Reading current page…</div>
+    <button id="scan">Scan current page</button>
+    <section id="result" hidden>
+      <div class="score"><b id="score">—</b><span id="severity">—</span></div>
+      <p id="recommendation"></p>
+      <ul id="indicators"></ul>
+    </section>
+    <p id="error" class="error" hidden></p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

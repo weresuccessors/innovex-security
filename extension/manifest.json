@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Innovex Security",
+  "version": "0.1.0",
+  "description": "Scan the current page with Innovex Security and warn about risky URLs.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Scan with Innovex Security",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
